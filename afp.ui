@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>321</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Port Forward Tool</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>301</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: black;</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>301</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 0px;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Add</string>
+     </attribute>
+     <widget class="QPushButton" name="addButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>76</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="add_listenPortLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="add_listenAddressLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="add_connectAddressLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="add_connectPortLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Listenadderss</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>0</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connectaddress</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Listenport</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connectport</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="addFirewallcheck">
+      <property name="geometry">
+       <rect>
+        <x>198</x>
+        <y>90</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add to firewall</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Remove</string>
+     </attribute>
+     <widget class="QPushButton" name="removeButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>76</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Listenadderss</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Listenport</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="del_listenAddressLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="del_listenPortLineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 1px;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>301</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: black;</string>
+   </property>
+   <widget class="QTextEdit" name="ConsoleOutput">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>301</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 0px;</string>
+    </property>
+    <property name="text">
+     <string>Console</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshConsoleButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>⟳</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
